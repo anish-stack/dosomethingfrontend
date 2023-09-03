@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+header {
+
+    overflow: hidden;
+    background-color: #793FDF;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    position: relative;
+    height: auto;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #FF9B50;
+}
+
+.logo sub {
+    position: relative;
+    left: -12px;
+    top: 5px;
+    color: #fff;
+
+}
+
+nav {
+  position: relative;
+
+    padding: 12px 15px;
+}
+
+.navitems {
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.navitems li {
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.imguser {
+    position: relative;
+    margin-left: -25px;
+}
+
+.user {
+    border-radius: 12px;
+    height: 100px;
+    width: 100px;
+    gap: 25px;
+    margin-right: 12px;
+    right: 0;
+    z-index: 1;
+    background-color: #464ee4;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: center;
+
+}
+
+.icons{
+    width: 50px;
+}
+.user li {
+    margin-left: 12px;
+    font-size: 1.1rem;
+    line-height: 0;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+.imguser:hover > .user{
+    display: flex;
+}
+.mobile-icons{
+    display: none;
+    gap: 12px;
+}
+.close{
+    display: none;
+}
+.show{
+    top: 76px;
+}
+
+.imguser .user-trigger {
+  
+  cursor: pointer;
+}
+.btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 4px;
+}
+.btn:hover{
+    border-color: #00d0ff;
+    color: rgb(42, 252, 0);
+}
+
+.imguser:hover .user {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media screen and (max-width:1028px) {
+    .mobile-icons{
+        display: flex;
+    }
+
+    .user{
+      position: absolute;
+    }
+    nav{
+        height: auto;
+        transition: top 0.5s ease-in-out;
+        width: 100%;
+        left: 0;
+        z-index: 9;
+        top: -100%;
+        background-color: #793FDF;
+        position: absolute;
+    }
+    nav ul{
+        align-items: center;
+        gap: 25px;
+        flex-direction: column;
+    }
+    .imguser {
+        margin-left: 0;
+    }
+}

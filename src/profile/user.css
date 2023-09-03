@@ -1,0 +1,129 @@
+/* ProfilePage.css */
+
+/* Global styles */
+:root {
+    --background-color1: #fafaff;
+    --background-color2: #ffffff;
+    --background-color3: #ededed;
+    --background-color4: #cad7fda4;
+    --primary-color: #4b49ac;
+    --secondary-color: #0c007d;
+    --border-color: #3f0097;
+    --one-use-color: #3f0097;
+    --two-use-color: #5500cb;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color1);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Profile header */
+  .profile-header {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .profile-header h1 {
+    color: var(--primary-color);
+  }
+  
+  /* Profile info */
+  .profile-info {
+    background-color: var(--background-color2);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-info h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  .profile-info p {
+    margin: 5px 0;
+  }
+  /* Orders table */
+  .tableorder{
+    overflow-x: scroll;
+  }
+.orders-table {
+    max-width: 100%;
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    background-color: var(--background-color3);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: var(--primary-color) var(--background-color3); /* Firefox */   
+  }
+  
+  .orders-table th,
+  .orders-table td {
+    padding: 10px;
+    text-align: center;
+    white-space: nowrap; /* Prevent line breaks in table cells */
+  }
+  
+  .orders-table th {
+    background-color: var(--background-color4);
+    color: var(--primary-color);
+  }
+  
+  .orders-table td {
+    border-top: 1px solid var(--border-color);
+  }
+ ::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+  
+ ::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 4px; /* Rounded corner for thumb */
+  }
+  
+ ::-webkit-scrollbar-track {
+    background-color: var(--background-color3);
+  }
+  
+  /* ... (previous styles) */
+  
+  /* Button style */
+  button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: var(--one-use-color);
+  }
+  .cancel{
+    background-color: red;
+  }
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .profile-info,
+    .orders-table {
+      padding: 10px;
+    }
+  }
+  

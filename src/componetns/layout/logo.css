@@ -1,0 +1,11 @@
+.logo{
+    color: #ffffff;
+    font-size:1.5rem;
+    font-weight: 800;
+}
+.logo sub{
+    top: 15px;
+    position: relative;
+    left: -21px;
+    color: #FF6600;
+}

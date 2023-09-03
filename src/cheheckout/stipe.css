@@ -1,0 +1,73 @@
+/* Styling for the payment form container */
+.payment-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #8e2de2, #4a00e0);}
+
+/* Styling for the form */
+.payment-form {
+  background-image: linear-gradient(to right, #8e2de2, #4a00e0);  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Styling for labels */
+.payment-form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Styling for input fields */
+.payment-form-input {
+  width: 100%;
+  background-color: transparent;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* Styling for Stripe input fields */
+.stripe-input {
+  color: #ffffff;
+  border: 1px solid #ccc !important;
+}
+
+/* Styling for the submit button */
+.payment-form-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+::placeholder{
+  color: #ffffff;
+}
+
+.payment-form-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.payment-form-button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for responsive layout */
+@media (max-width: 768px) {
+  .payment-form-container {
+    padding: 20px;
+  }
+}
